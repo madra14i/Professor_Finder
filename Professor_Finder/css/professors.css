@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+
+body{
+    background-color: lightgreen;
+}
+
+.nav{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid;
+    border-radius: 35px;
+    height: 750px;
+    width: 250px;
+    top: 100px;
+    left: 100px;
+}
+
+.page{
+    position: absolute;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 35px;
+    height: 750px;
+    width: 1400px;
+    top: 100px;
+    left: 400px;
+}
+
+.prog-nav ul li{
+    list-style: none;
+    border: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin: 15px;
+    border-radius: 35px;
+    height: 50px;
+}
+
+.prog-nav a{
+    color:black;
+}
