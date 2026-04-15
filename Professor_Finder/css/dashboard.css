@@ -45,7 +45,7 @@ body{
     background: linear-gradient(to bottom, #416720, #619A2F, #81CD3F);
 }
 
-.program:hover{
+.program:hover, .sidenav a:hover{
     background: linear-gradient(to bottom, #4f7e27, #6fb136, #8bdd43);
     cursor: pointer;
 }
@@ -166,3 +166,30 @@ body{
     text-decoration: none;
     color: black;
 }
+
+
+.sidenav {
+    display: none;
+    position: absolute;
+    margin-left: 13%;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.889);
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+
+.sidenav a{
+    display: block;
+    text-align: center;
+    background-color: #4B8717;
+    padding: 8px 15px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-size: 19px;
+}
+
+.program:hover .sidenav {
+    display: block;
+}
+
