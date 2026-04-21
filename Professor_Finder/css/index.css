@@ -21,31 +21,45 @@ body{
 .container{
     background-color: rgba(75, 183, 23, 0.6);
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     align-items: center;
     width: 100%;
     height: 100vh;
+    gap: 20em;
 }
 
+/* LOGO AND TITLE */
 .logo-box{
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 10;
-    left: 100px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#cvsu-logo{
-    width: 40%;
+    align-items: center; 
+    width: 25%;
     height: auto;
 }
 
+#cvsu-logo{
+    width: 50vh;
+    height: auto;
+}
+
+.cvsu-main,
+.prof-finder{
+    fill: #fed656;
+    stroke: #A38905;
+    stroke-width: 2px;
+}
+
+.cvsu-main{
+    font-size: 90px;
+}
+
+.prof-finder{
+    font-size: 50px;
+}
+
+/* LOGIN BOX */
 .login-transp-box{
-    position: absolute;
     background-color: rgb(255, 255, 255, 0);
     backdrop-filter: blur(2px);
     display: flex;
@@ -55,9 +69,6 @@ body{
     border: none;
     border-radius: 15px;
     box-shadow: 0px 0px 15px;
-    left: 120vh;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 .login-transp-box h1{
@@ -73,6 +84,14 @@ body{
     margin-bottom: 40px;
 }
 
+.studnum-icon,
+.pass-icon{
+    position: absolute;
+    scale: 1.2;
+    padding: 12px 10px;
+    min-width: 35px;
+}
+
 #Student-num,
 #password{
     border-radius: 15px;
@@ -81,8 +100,8 @@ body{
     width: 100%;
     height: 50px;
     border: 1px solid grey;
-    padding-left: 10%;
     box-sizing: border-box;
+    padding-left: 12%;
 }
 
 #Student-num::placeholder,
@@ -94,7 +113,8 @@ body{
 
 #log-btn{
     color: white;
-    font-weight: bold;
+    font-size: 19px;
+    font-weight: 700;
     border-radius: 15px;
     outline: none;
     box-shadow: none;
@@ -137,9 +157,10 @@ body{
 }
 
 .create-forgot a:hover{
-    color: green;
+    color: #fed656;
 }
 
+/* TRANSPARENT CIRCLES */
 .dot1,
 .dot2,
 .dot3,
